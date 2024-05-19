@@ -1,0 +1,46 @@
+--[ARRAYFIELD] ArrayField
+local ArrayField = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3AArrayfield%20Library"))()
+--[FUNCTION]
+function KryptonUI()
+  --Load string here
+  ArrayField:Destroy()
+  end
+--[WINODW]
+local Window = ArrayField:CreateWindow({
+   Name = "Krypton | HUB",
+   LoadingTitle = "Verification System",
+   LoadingSubtitle = "Lightning Fast",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = KryptonVERIFICATION, -- Create a custom folder for your hub/game
+      FileName = "VERIFICATION"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Kypton | HUB",
+      Subtitle = "Key System",
+      Note = "Whitelist Only!",
+      FileName = "KryptonKEY", -- It is recommended to use something unique as other scripts using ArrayField may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like ArrayField to get the key from
+      Key = {"DEV","1"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+--[TAB]
+local Tab = Window:CreateTab("Krypton", 4483362458)
+local Button = Tab:CreateButton({
+   Name = "Load Krypton",
+   Interact = 'Click',
+   Callback = function()
+     KryptonUI()
+   end,
+})
+--[ARRAYFIELD] SecureMode
+getgenv().SecureMode = true
+--[ARRAYFIELD] Arrayfield
+ArrayField:LoadConfiguration()
