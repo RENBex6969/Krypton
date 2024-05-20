@@ -1,0 +1,336 @@
+--[/] Orion Library | Mobile / PC
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
+--[/] Opening MakeNotification
+OrionLib:MakeNotification({
+	Name = "Krypton",
+	Content = "Ran Krypton successfully",
+	Image = "rbxassetid://4483345998",
+	Time = 5.5
+  })
+--[/] Functions
+function closenotify()
+  OrionLib:MakeNotification({
+	Name = "Krypton",
+	Content = "Thank you for using Krypton!",
+	Image = "rbxassetid://4483345998",
+	Time = 5.5
+  })
+end
+--[/] Window
+local Window = OrionLib:MakeWindow({
+  Name = "Krypton | HUB", 
+  HidePremium = false, 
+  SaveConfig = true,
+  IntroEnabled = true,
+  IntroText = "Krypton",
+  ConfigFolder = "KryptonFOLDER",
+})
+--[/] Tabs
+local RatemyAvatarTab = Window:MakeTab({
+	Name = "Rate my Avatar",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local SusTab = Window:MakeTab({
+	Name = "Suspicious",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local PlayerTab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local DebuggingTab = Window:MakeTab({
+	Name = "Debugging",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local InfoTab = Window:MakeTab({
+	Name = "Info",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--[/] Suspicous | Tab [SusTab]
+SusTab:AddLabel("FE")
+--[/] Scripts
+SusTab:AddButton({
+	Name = "Bang GUI [1]",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/RENBex6969/Krypton/main/source.lua.txt"))()
+	end
+})
+SusTab:AddButton({
+	Name = "Bang GUI [2]",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/InmortalBL/InmortalBL/main/BANG"))()
+	end
+})
+--[/] Rate My Avatar | Tab [RatemyAvatarTab]
+RatemyAvatarTab:AddLabel("Trolling")
+--[/] Scripts
+RatemyAvatarTab:AddButton({
+	Name = "Universal FE GUI [1]",
+	Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+	end
+})
+RatemyAvatarTab:AddButton({
+	Name = "Trolling GUI [2]",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/RENBex6969/Krypton/main/Rate%20my%20avatar%20GUI%20script.txt"))()
+	end
+})
+RatemyAvatarTab:AddLabel("Fun")
+--[/] Scripts
+RatemyAvatarTab:AddButton({
+	Name = "Trivia GUI [1]",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/RENBex6969/Krypton/main/script.txt"))()
+	end
+})
+RatemyAvatarTab:AddLabel("Suspicious")
+--[/] Scripts
+RatemyAvatarTab:AddButton({
+	Name = "Bang GUI [1]",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/RENBex6969/Krypton/main/source.lua.txt"))()
+	end
+})
+RatemyAvatarTab:AddButton({
+	Name = "Bang GUI [2]",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/InmortalBL/InmortalBL/main/BANG"))()
+	end
+})
+--[/] Debugging | Tab [DebuggingTab]
+DebuggingTab:AddLabel("Lag")
+--[/] Scripts
+DebuggingTab:AddButton({
+	Name = "FPS Counter",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Sempiller/sdluniversal/main/fpsviewer.lua"))()
+	end
+})
+DebuggingTab:AddButton({
+	Name = "FPS+",
+	Callback = function()
+	  loadstring(game:HttpGet("https://fpsplus.000webhostapp.com/OBFUSCATED_SOURCE_FPSPLUS.lua",true))()
+	end
+})	
+DebuggingTab:AddButton({
+	Name = "Lag Reducer",
+	Callback = function()
+	  loadstring(game:HttpGet('https://pastebin.com/raw/RW7ZT29m'))()
+	end
+})
+DebuggingTab:AddLabel("Dex's")
+--[/] Scripts
+DebuggingTab:AddButton({
+	Name = "Dark Dex V1",
+	Callback = function()
+	  loadstring(game:GetObjects("rbxassetid://3025032531")[1].Source)()
+	end
+})	
+DebuggingTab:AddButton({
+	Name = "Dark Dex V2",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceSpiffer/Scripts/main/Script4",true))()
+	end
+})	
+DebuggingTab:AddButton({
+	Name = "Dark Dex V3",
+	Callback = function()
+	  loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+	end
+})	
+DebuggingTab:AddButton({
+	Name = "Dark Dex V4",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceSpiffer/Scripts/main/Script5",true))()
+	end
+})
+DebuggingTab:AddButton({
+	Name = "Dark Dex V4 [MOBILE]",
+	Callback = function()
+	  loadstring(game:HttpGet("https://github.com/Hosvile/DEX-Explorer/releases/latest/download/main.lua",true))()
+	end
+})	
+DebuggingTab:AddLabel("Remote SPY")
+--[/] Scripts
+DebuggingTab:AddButton({
+	Name = "SimpleSPY V3",
+	Callback = function()
+	  loadstring(game:HttpGet('loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()'))()
+	end
+})
+DebuggingTab:AddButton({
+	Name = "SimpleSPY V2.2",
+	Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua'))()
+	end
+})
+DebuggingTab:AddButton({
+	Name = "TurtleSPY",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Brand/Turtle-Spy/main/source.lua",true))()
+	end
+})	
+DebuggingTab:AddLabel("Backdoor")
+--[/] Scripts
+DebuggingTab:AddButton({
+	Name = "Backdoor Scanner & [EXECUTOR] 1",
+	Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/L1ghtingBolt/FraktureSS/master/source.lua',true))()
+	end
+})	
+DebuggingTab:AddButton({
+	Name = "Backdoor Scanner & [EXECUTOR] 2",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/v8/src/main.lua"))();
+	end
+})
+DebuggingTab:AddButton({
+	Name = "Backdoor Scanner & [EXECUTOR] 3",
+	Callback = function()
+	  loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
+	end
+})
+--[/] Player | Tab [PlayerTab]
+PlayerTab:AddLabel("Game")
+--[/] Scripts
+PlayerTab:AddButton({
+	Name = "Server Auto Rejoin",
+	Callback = function()
+	  loadstring(game:HttpGet("https://pastebin.com/raw/9fYwjt6n"))()
+	end
+})
+PlayerTab:AddButton({
+	Name = "Server Rejoin",
+	Callback = function()
+	  loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
+	end
+})
+PlayerTab:AddButton({
+	Name = "Server Kick",
+	Callback = function()
+	  game.Players.LocalPlayer:Kick("Kicked by Krypton")
+	end
+})
+DebuggingTab:AddButton({
+	Name = "Server HOP",
+	Callback = function()
+	  local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+  	module:Teleport(game.PlaceId)
+	end
+})
+--[/] Player | Tab [PlayerTab]
+PlayerTab:AddLabel("Scripts")
+--[/] Scripts
+PlayerTab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+	  loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+	end
+})
+PlayerTab:AddButton({
+	Name = "Inf Jump [Tap to turn off / and turn on]",
+	Callback = function()
+	  loadstring(game:HttpGet('https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt'))()
+	end
+})
+PlayerTab:AddButton({
+	Name = "Fly & Noclip",
+	Callback = function()
+	  loadstring(game:HttpGet('https://weinzspace.com/revamp.lua'))()
+	end
+})
+PlayerTab:AddButton({
+	Name = "Fly V3",
+	Callback = function()
+	  loadstring(game:HttpGet('https://pastebin.com/raw/bHa6HDFc'))()
+	end
+})	
+PlayerTab:AddButton({
+	Name = "Anti AFK V1",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/evxncodes/mainroblox/main/anti-afk",true))()
+	end
+})
+PlayerTab:AddButton({
+	Name = "Anti Kick",
+	Callback = function()
+	  loadstring(game:HttpGet("https://pastebin.com/raw/gsxvWvnj"))()
+	end
+})
+--[/] Chat
+PlayerTab:AddLabel("Chat")
+PlayerTab:AddButton({
+	Name = "SIMPLE Chat Bypasser",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/BakaPraselol/MRCBV4LSB4KRS/main/Loader"))()
+	end
+})
+PlayerTab:AddButton({
+	Name = "BetterBypasser",
+	Callback = function()
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/products/main/BetterBypasser/loader.lua",true))({
+    Method = 3,
+    Keybind = "F",
+    ShowMethodDictionary = true,
+})
+	end
+})	
+--[/]Humanoid	
+PlayerTab:AddLabel("Humanoid")
+local WalkSpeed = PlayerTab:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 1000,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Walkspeed",
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+local JumpPower = PlayerTab:AddSlider({
+	Name = "Jump Power",
+	Min = 50,
+	Max = 1000,
+	Default = 50,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Jump power",
+	Callback = function(Value)
+	  game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+PlayerTab:AddButton({
+	Name = "Reset WalkSpeed",
+	Callback = function()
+	 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	 WalkSpeed:Set(16)
+  	end
+})
+PlayerTab:AddButton({
+	Name = "Reset Jump power",
+	Callback = function()
+	 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	 JumpPower:Set(50)
+  	end   
+})   
+PlayerTab:AddButton({
+	Name = "Restore to default configuration",
+	Callback = function()
+	 --[/]Jump power
+	 game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+	 JumpPower:Set(50)
+	 --[/]Walkspeed
+	 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	 WalkSpeed:Set(16)
+  	end
+})
+--[/] ORION
+OrionLib:Init()
