@@ -3,6 +3,7 @@ local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
 for i,v in pairs(HWIDTable) do
   if v == HWID then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RENBex6969/Krypton/main/KryptonOfficial/KrytonKeysystem'))()
     print("Whitelist - 3")
   end
 end
