@@ -1,5 +1,7 @@
+local HWIDTable = 
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 for i,v in pairs(HWIDTable) do
-  if v == then
+  if v == HWID then
     print("Whitelist - 3")
   end
 end
