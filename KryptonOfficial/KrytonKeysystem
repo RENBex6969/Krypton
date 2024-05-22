@@ -22,7 +22,7 @@ _G.LicenseInput = "string"
 _G.IDInput = "string"
 
 
-function Kryton()
+function KrytonLoad()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/RENBex6969/Krypton/main/KryptonOfficial/KrytonLoader"))()
 end
 
@@ -75,9 +75,11 @@ Tab:AddButton({
 	Callback = function()
         if _G.LicenseInput == _G.License and _G.IDInput == _G.ID then
          CorrectKeyNotifications()
-         Krypton()
+         KryptonLoad()
+         OrionLib:Destroy()
      else
         WrongKeyNotifications()
         end
   	end    
 })
+OrionLib:Init()
