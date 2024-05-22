@@ -1,5 +1,6 @@
-local HWIDTable = 
+local HWIDTable = loadstring(game:HttpGet('https://raw.githubusercontent.com/RENBex6969/Krypton/main/KryptonOfficial/WhitelistHwid'))()
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+
 for i,v in pairs(HWIDTable) do
   if v == HWID then
     print("Whitelist - 3")
