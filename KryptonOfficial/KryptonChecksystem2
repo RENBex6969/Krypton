@@ -1,9 +1,6 @@
---[] ID Check
-local usertable = {6033654379}
-local playeruserid = game:GetService("Players").LocalPlayer.UserId
-
 for i, players in pairs(usertable) do
     if playeruserid == players then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RENBex6969/Krypton/main/KryptonOfficial/KryptonChecksystem3'))()
         print("Whitelisted - 2")
     end
 end
