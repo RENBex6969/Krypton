@@ -1,0 +1,83 @@
+
+OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source'))()
+local Window = OrionLib:MakeWindow({
+  Name = "Krypton | KEY", 
+  IntroEnabled = true,
+  IntroText = "Kryton Key System",
+  HidePremium = true,
+  SaveConfig = true,
+  ConfigFolder = "KryptonKEYSYSTEM",
+})
+
+OrionLib:MakeNotification({
+	Name = "Krypton",
+	Content = "Thank you for buying Krypton",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+_G.License = "P-KEY"
+_G.ID = "P-KEY"
+_G.LicenseInput = "string"
+_G.IDInput = "string"
+
+
+function Kryton()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/RENBex6969/Krypton/main/KryptonOfficial/KrytonLoader"))()
+end
+
+function CorrectKeyNotifications()
+    OrionLib:MakeNotification({
+        Name = "Kryton",
+        Content = "Ran Krypton",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+function WrongKeyNotifications()
+    OrionLib:MakeNotification({
+        Name = "Krypton",
+        Content = "Not correct credentials entered",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+local Tab = Window:MakeTab({
+	Name = "KEY",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter License",
+	Default = "Enter License",
+	TextDisappear = false,
+	Callback = function(Value)
+        _G.LicenseInput = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "Enter ID",
+	Default = "Enter ID",
+	TextDisappear = false,
+	Callback = function(Value)
+        _G.IDInput = Value
+	end	  
+})
+
+
+
+Tab:AddButton({
+	Name = "Check License & ID!",
+	Callback = function()
+        if _G.LicenseInput == _G.License and _G.IDInput == _G.ID then
+         CorrectKeyNotifications()
+         Krypton()
+     else
+        WrongKeyNotifications()
+        end
+  	end    
+})
