@@ -4,7 +4,7 @@ local playeruserid = game.Players.LocalPlayer.Name
 
 for i, players in pairs(usertable) do
     if playeruserid == players then
-        loadstring(game:HttpGet(''))()
-        print("Whitelisted")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RENBex6969/Krypton/main/KryptonOfficial/KryptonChecksystem2'))()
+        print("Whitelisted - 1")
     end
 end
