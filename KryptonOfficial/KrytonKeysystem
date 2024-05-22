@@ -21,11 +21,6 @@ _G.ID = "P-KEY"
 _G.LicenseInput = "string"
 _G.IDInput = "string"
 
-
-function KrytonLoad()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/RENBex6969/Krypton/main/KryptonOfficial/KrytonLoader"))()
-end
-
 function CorrectKeyNotifications()
     OrionLib:MakeNotification({
         Name = "Kryton",
@@ -75,7 +70,7 @@ Tab:AddButton({
 	Callback = function()
         if _G.LicenseInput == _G.License and _G.IDInput == _G.ID then
          CorrectKeyNotifications()
-         KryptonLoad()
+         loadstring(game:HttpGet('https://raw.githubusercontent.com/RENBex6969/Krypton/main/KryptonOfficial/KrytonLoader'))()
          OrionLib:Destroy()
      else
         WrongKeyNotifications()
