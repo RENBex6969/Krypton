@@ -1,0 +1,10 @@
+--[] Username Check
+local usertable = {"Ryngrade","KryptonManager"}
+local playeruserid = game.Players.LocalPlayer.Name 
+
+for i, players in pairs(usertable) do
+    if playeruserid == players then
+        loadstring(game:HttpGet(''))()
+        print("Whitelisted")
+    end
+end
